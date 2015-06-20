@@ -828,7 +828,7 @@ CSceneGame.prototype.OnGameDataUpdate = function()
 
 	}
 
-	if( this.m_rgGameData.timestamp == this.m_nTime )
+	/*if( this.m_rgGameData.timestamp == this.m_nTime )
 	{
 		if ( this.m_nTime )
 		{
@@ -836,7 +836,7 @@ CSceneGame.prototype.OnGameDataUpdate = function()
 			this.m_bReceivedStaleData = false;
 		}
 		return;
-	}
+	}*/
 	this.m_nTime = this.m_rgGameData.timestamp;
 	if( !this.m_nSimulatedTime )
 	{
