@@ -3631,8 +3631,7 @@
 				crossOrigin: resource.crossOrigin,
 				xhrType: Resource.XHR_RESPONSE_TYPE.TEXT
 			};
-			var baseUrl = resource.url.substr(0, resource.url.lastIndexOf('/') + 1);
-
+			var baseUrl = resource.url.substr(0, resource.url.lastIndexOf('/'));
 
 			this.add(resource.name + '_atlas', atlasPath, atlasOptions, function (res) {
 				// create a spine atlas using the loaded text
